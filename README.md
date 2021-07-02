@@ -1,3 +1,7 @@
+# This is a react project for fun, the project is based on the video course on Youtube by Dev Ed, see the links below
+
+https://www.youtube.com/watch?v=pCA4qpQDZD8&t=4982s
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

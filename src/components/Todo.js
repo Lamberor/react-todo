@@ -22,12 +22,12 @@ const Todo = ({ text, todo, todos, setTodos }) => {
     return (
         <div className="todo">
             <li>{text}</li>
-            <button onClick={completeHandler}>
-                {
-                    todo.completed ? 'Not Done' : 'Done'
-                }
+            <button className="complete-btn" onClick={completeHandler}>
+                <i className="fas fa-check"></i>
             </button>
-            <button onClick={deleteHandler}>GIVE UP</button>
+            <button className="trash-btn" onClick={deleteHandler}>
+                <i className="fas fa-trash"></i>
+            </button>
         </div>
     );
 };

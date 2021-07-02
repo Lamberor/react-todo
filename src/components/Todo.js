@@ -21,9 +21,9 @@ const Todo = ({ text, todo, todos, setTodos }) => {
 
     return (
         <div className="todo">
-            <li>{text}</li>
+            {todo.completed ? <li className="completed">{text}</li> : <li>{text}</li>}
             <button className="complete-btn" onClick={completeHandler}>
-                <i className="fas fa-check"></i>
+                {todo.completed ? <i className="fas fa-times"></i> : <i className="fas fa-check"></i>}
             </button>
             <button className="trash-btn" onClick={deleteHandler}>
                 <i className="fas fa-trash"></i>
